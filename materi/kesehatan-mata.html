@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kesehatan Mata — K3 QUEST</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{'primary':'#002530','primary-container':'#193B46','secondary':'#396662','secondary-fixed':'#BCECE7','surface':'#F4FAFE','surface-container-lowest':'#ffffff','surface-container-low':'#EEF4F8','surface-container':'#E9EFF3','on-surface':'#161C1F','on-surface-variant':'#41484B','outline-variant':'#C1C7CB','correct':'#23866D'},fontFamily:{sans:['Inter'],display:['Plus Jakarta Sans']},borderRadius:{card:'14px',btn:'10px'},boxShadow:{card:'0 1px 4px rgba(23,43,52,0.06),0 4px 16px rgba(23,43,52,0.04)',header:'0 1px 8px rgba(23,43,52,0.05)'}}}}
+  </script>
+  <link rel="stylesheet" href="../assets/css/style.css"/>
+</head>
+<body class="bg-surface text-on-surface font-sans antialiased">
+<header id="app-header" class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-header border-b border-outline-variant/30"></header>
+<div class="h-16"></div><div id="app-breadcrumb"></div>
+<main class="max-w-4xl mx-auto px-4 sm:px-6 py-10">
+  <div class="flex flex-col gap-3 mb-8 fade-up">
+    <div class="flex items-center gap-2">
+      <span class="badge badge-primary">Modul 2</span>
+      <span class="badge badge-teal"><span class="material-symbols-outlined icon-sm">schedule</span>~7 menit</span>
+    </div>
+    <h1 class="font-display text-3xl font-bold text-primary">Kesehatan Mata</h1>
+    <p class="text-on-surface-variant">Jaga Penglihatan saat Bekerja di Layar</p>
+    <div class="flex items-center gap-3 mt-1">
+      <div class="progress-wrap flex-1"><div class="progress-bar" style="width:50%"></div></div>
+      <span class="text-xs text-on-surface-variant font-medium flex-shrink-0">Modul 2/4</span>
+    </div>
+  </div>
+  <div class="card p-6 sm:p-8 mb-6 materi-content fade-up delay-1">
+    <div class="flex flex-col gap-6">
+      <div class="bg-surface-container-low rounded-xl p-6 text-center">
+        <div class="text-6xl mb-2">👁️</div>
+        <p class="text-sm text-on-surface-variant">Mata bekerja keras setiap hari di depan layar</p>
+      </div>
+      <div>
+        <h3>Mengapa Kesehatan Mata Penting?</h3>
+        <p>Layar komputer memancarkan cahaya biru (blue light) yang dapat menyebabkan kelelahan mata (eye strain), sakit kepala, dan gangguan tidur. Rata-rata programmer menatap layar 8–12 jam sehari.</p>
+      </div>
+      <div>
+        <h3>Aturan 20-20-20</h3>
+        <p>Setiap <strong>20 menit</strong> bekerja di layar, lihat objek sejauh <strong>20 kaki (±6 meter)</strong> selama <strong>20 detik</strong>. Ini membantu merelaksasi otot mata yang tegang.</p>
+        <div class="grid grid-cols-3 gap-3 mt-4">
+          <div class="bg-secondary-fixed/30 rounded-xl p-4 text-center">
+            <div class="font-display font-extrabold text-3xl text-primary">20</div>
+            <div class="text-xs text-on-surface-variant mt-1">Menit bekerja</div>
+          </div>
+          <div class="bg-secondary-fixed/30 rounded-xl p-4 text-center">
+            <div class="font-display font-extrabold text-3xl text-primary">20</div>
+            <div class="text-xs text-on-surface-variant mt-1">Kaki jaraknya</div>
+          </div>
+          <div class="bg-secondary-fixed/30 rounded-xl p-4 text-center">
+            <div class="font-display font-extrabold text-3xl text-primary">20</div>
+            <div class="text-xs text-on-surface-variant mt-1">Detik istirahat</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3>Tips Menjaga Kesehatan Mata</h3>
+        <ul>
+          <li>Atur kecerahan layar sesuai kondisi pencahayaan ruangan.</li>
+          <li>Gunakan <em>dark mode</em> atau filter cahaya biru pada malam hari.</li>
+          <li>Posisikan layar 50–70 cm dari mata, sedikit di bawah garis pandang.</li>
+          <li>Berkedip lebih sering — orang cenderung berkedip lebih jarang saat menatap layar.</li>
+          <li>Gunakan tetes mata (eye drops) jika mata terasa kering.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Tanda-tanda Kelelahan Mata (Eye Strain)</h3>
+        <ul>
+          <li>Mata terasa panas, gatal, atau berat</li>
+          <li>Penglihatan kabur atau berbayang</li>
+          <li>Sakit kepala di area dahi atau pelipis</li>
+          <li>Leher dan bahu terasa kaku</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="key-point-card mb-8 fade-up delay-2">
+    <div class="flex items-center gap-2 mb-4"><span class="material-symbols-outlined text-secondary icon-lg">star</span><h2 class="font-display font-bold text-base text-primary-container">Poin Penting</h2></div>
+    <ul class="flex flex-col gap-2">
+      <li class="flex items-start gap-2.5 text-sm text-on-surface-variant"><span class="w-5 h-5 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 mt-0.5"><span class="material-symbols-outlined text-white" style="font-size:13px">check</span></span><span>Gunakan aturan 20-20-20 untuk istirahat mata secara teratur.</span></li>
+      <li class="flex items-start gap-2.5 text-sm text-on-surface-variant"><span class="w-5 h-5 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 mt-0.5"><span class="material-symbols-outlined text-white" style="font-size:13px">check</span></span><span>Sesuaikan kecerahan layar dengan kondisi pencahayaan sekitar.</span></li>
+      <li class="flex items-start gap-2.5 text-sm text-on-surface-variant"><span class="w-5 h-5 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 mt-0.5"><span class="material-symbols-outlined text-white" style="font-size:13px">check</span></span><span>Jarak layar ideal 50–70 cm dari mata.</span></li>
+      <li class="flex items-start gap-2.5 text-sm text-on-surface-variant"><span class="w-5 h-5 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 mt-0.5"><span class="material-symbols-outlined text-white" style="font-size:13px">check</span></span><span>Berkediplah lebih sering agar mata tidak kering.</span></li>
+    </ul>
+  </div>
+  <div class="flex flex-col sm:flex-row gap-3 justify-between fade-up delay-3">
+    <a href="ergonomi.html" class="btn btn-secondary"><span class="material-symbols-outlined icon-sm">arrow_back</span>Materi 1: Ergonomi</a>
+    <a href="keselamatan-listrik.html" class="btn btn-primary">Materi 3: Keselamatan Listrik<span class="material-symbols-outlined icon-sm">arrow_forward</span></a>
+  </div>
+</main>
+<footer id="app-footer" class="bg-surface-container-low border-t border-outline-variant/30"></footer>
+<script src="../assets/js/k3.js"></script>
+<script>
+  if (!K3.sudahIdentitas()) K3.redirect('../identitas.html');
+  K3.tandaiSelesai('kesehatan-mata');
+  renderHeader('materi');
+  renderFooter();
+  renderBreadcrumb([{label:'Materi K3',href:'../pengantar.html'},{label:'Kesehatan Mata',href:null}]);
+</script>
+</body>
+</html>
