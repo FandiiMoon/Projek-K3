@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ergonomi dan Posisi Kerja — K3 QUEST</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{'primary':'#002530','primary-container':'#193B46','secondary':'#396662','secondary-fixed':'#BCECE7','surface':'#F4FAFE','surface-container-lowest':'#ffffff','surface-container-low':'#EEF4F8','surface-container':'#E9EFF3','on-surface':'#161C1F','on-surface-variant':'#41484B','outline-variant':'#C1C7CB','correct':'#23866D','correct-bg':'#D8F0E8','wrong':'#D9535D'},fontFamily:{sans:['Inter','system-ui','sans-serif'],display:['Plus Jakarta Sans','sans-serif']},borderRadius:{card:'14px',btn:'10px'},boxShadow:{card:'0 1px 4px rgba(23,43,52,0.06),0 4px 16px rgba(23,43,52,0.04)',header:'0 1px 8px rgba(23,43,52,0.05)'}}}}
+  </script>
+  <link rel="stylesheet" href="../assets/css/style.css"/>
+</head>
+<body class="bg-surface text-on-surface font-sans antialiased">
+<header id="app-header" class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-header border-b border-outline-variant/30"></header>
+<div class="h-16"></div>
+<div id="app-breadcrumb"></div>
+
+<main class="max-w-4xl mx-auto px-4 sm:px-6 py-10">
+  <div class="flex flex-col gap-3 mb-8 fade-up">
+    <div class="flex items-center gap-2">
+      <span class="badge badge-primary">Modul 1</span>
+      <span class="badge badge-teal"><span class="material-symbols-outlined icon-sm">schedule</span>~8 menit</span>
+    </div>
+    <h1 class="font-display text-3xl font-bold text-primary">Ergonomi dan Posisi Kerja</h1>
+    <p class="text-on-surface-variant text-base">Bekerja Nyaman dengan Ergonomi</p>
+    <div class="flex items-center gap-3 mt-1">
+      <div class="progress-wrap flex-1"><div class="progress-bar" style="width:25%"></div></div>
+      <span class="text-xs text-on-surface-variant font-medium flex-shrink-0">Modul 1/4</span>
+    </div>
+  </div>
+
+  <div class="card p-6 sm:p-8 mb-6 materi-content fade-up delay-1">
+    <div class="flex flex-col gap-6">
+      <div class="bg-surface-container-low rounded-xl p-4 flex justify-center">
+        <svg class="w-full max-w-sm h-auto" viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="40" y="120" width="200" height="9" rx="3" fill="#193B46"/>
+          <rect x="60" y="129" width="9" height="75" rx="2" fill="#84A5B2" opacity="0.7"/>
+          <rect x="220" y="129" width="9" height="75" rx="2" fill="#84A5B2" opacity="0.7"/>
+          <rect x="143" y="108" width="14" height="12" fill="#84A5B2"/>
+          <rect x="130" y="118" width="40" height="3" rx="1.5" fill="#193B46"/>
+          <rect x="100" y="55" width="100" height="64" rx="5" fill="#002530"/>
+          <rect x="106" y="61" width="88" height="52" rx="3" fill="#EEF4F8"/>
+          <rect x="112" y="67" width="30" height="4" rx="1.5" fill="#396662"/>
+          <rect x="112" y="75" width="48" height="3" rx="1.5" fill="#A1CFCB"/>
+          <rect x="118" y="81" width="36" height="3" rx="1.5" fill="#A1CFCB"/>
+          <rect x="108" y="122" width="84" height="9" rx="2" fill="#193B46" opacity="0.35"/>
+          <circle cx="198" cy="53" r="13" fill="#193B46"/>
+          <path d="M198 68 C200 88 203 110 207 134" stroke="#193B46" stroke-width="11" stroke-linecap="round"/>
+          <path d="M207 134 L165 136" stroke="#193B46" stroke-width="11" stroke-linecap="round"/>
+          <circle cx="118" cy="45" r="9" fill="#BCECE7"/>
+          <path d="M115 45 L117.5 47.5 L122.5 42.5" stroke="#102521" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div>
+        <h3>Apa itu Ergonomi?</h3>
+        <p><strong>Ergonomi</strong> adalah ilmu yang mempelajari cara menyesuaikan lingkungan, alat, dan metode kerja dengan kemampuan serta keterbatasan manusia. Tujuannya adalah membuat pekerjaan menjadi lebih <strong>nyaman, aman, dan efisien</strong>.</p>
+        <p>Bagi <em>software engineer</em> yang menghabiskan 6–10 jam sehari di depan komputer, penerapan prinsip ergonomi sangat krusial untuk mencegah cedera jangka panjang.</p>
+      </div>
+      <div>
+        <h3>Pengaturan Kursi yang Ideal</h3>
+        <ul>
+          <li><strong>Tinggi kursi:</strong> Sesuaikan agar kedua kaki menapak rata di lantai, lutut membentuk sudut ±90°.</li>
+          <li><strong>Dukungan lumbar:</strong> Sandaran kursi harus mendukung lekukan alami punggung bawah.</li>
+          <li><strong>Sandaran tangan (armrest):</strong> Atur agar siku berada pada sudut 90°–100° saat mengetik.</li>
+          <li><strong>Hindari duduk menyilang kaki</strong> dalam jangka panjang karena mengganggu sirkulasi darah.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Posisi Monitor yang Benar</h3>
+        <ul>
+          <li><strong>Jarak:</strong> 50–70 cm dari mata (kira-kira satu lengan).</li>
+          <li><strong>Ketinggian:</strong> Bagian atas layar sejajar atau sedikit di bawah garis pandang mata.</li>
+          <li><strong>Kemiringan:</strong> Condongkan monitor sedikit ke belakang (10°–20°).</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Pentingnya Bergerak dan Peregangan</h3>
+        <ul>
+          <li>Berdiri dan berjalan singkat setiap <strong>30–60 menit</strong>.</li>
+          <li>Lakukan <strong>peregangan leher dan bahu</strong>: putar kepala perlahan, angkat dan turunkan bahu.</li>
+          <li>Regangkan <strong>jari dan pergelangan tangan</strong> dengan membuka-menutup tangan.</li>
+          <li>Gunakan pengingat timer untuk mengingatkan waktu istirahat.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="key-point-card mb-8 fade-up delay-2">
+    <div class="flex items-center gap-2 mb-4">
+      <span class="material-symbols-outlined text-secondary icon-lg">star</span>
+      <h2 class="font-display font-bold text-base text-primary-container">Poin Penting</h2>
+    </div>
+    <ul class="flex flex-col gap-2">
+      <li class="flex items-start gap-2.5 text-sm text-on-surface-variant"><span class="w-5 h-5 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 mt-0.5"><span class="material-symbols-outlined text-white" style="font-size:13px">check</span></span><span>Ergonomi menyesuaikan lingkungan kerja dengan kebutuhan tubuh manusia.</span></li>
+      <li class="flex items-start gap-2.5 text-sm text-on-surface-variant"><span class="w-5 h-5 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 mt-0.5"><span class="material-symbols-outlined text-white" style="font-size:13px">check</span></span><span>Posisi duduk ideal: punggung tegak, kaki rata di lantai, sudut siku 90–100°.</span></li>
+      <li class="flex items-start gap-2.5 text-sm text-on-surface-variant"><span class="w-5 h-5 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 mt-0.5"><span class="material-symbols-outlined text-white" style="font-size:13px">check</span></span><span>Posisi layar: bagian atas monitor setinggi mata, jarak 50–70 cm.</span></li>
+      <li class="flex items-start gap-2.5 text-sm text-on-surface-variant"><span class="w-5 h-5 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 mt-0.5"><span class="material-symbols-outlined text-white" style="font-size:13px">check</span></span><span>Lakukan peregangan ringan setiap 30–60 menit.</span></li>
+      <li class="flex items-start gap-2.5 text-sm text-on-surface-variant"><span class="w-5 h-5 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 mt-0.5"><span class="material-symbols-outlined text-white" style="font-size:13px">check</span></span><span>Risiko postur buruk jangka panjang: nyeri punggung, leher, RSI (Repetitive Strain Injury).</span></li>
+    </ul>
+  </div>
+
+  <div class="flex flex-col sm:flex-row gap-3 justify-between fade-up delay-3">
+    <a href="../pengantar.html" class="btn btn-secondary"><span class="material-symbols-outlined icon-sm">arrow_back</span>Pengantar</a>
+    <a href="kesehatan-mata.html" class="btn btn-primary">Materi 2: Kesehatan Mata<span class="material-symbols-outlined icon-sm">arrow_forward</span></a>
+  </div>
+</main>
+
+<footer id="app-footer" class="bg-surface-container-low border-t border-outline-variant/30"></footer>
+<script src="../assets/js/k3.js"></script>
+<script>
+  if (!K3.sudahIdentitas()) K3.redirect('../identitas.html');
+  K3.tandaiSelesai('ergonomi');
+  renderHeader('materi');
+  renderFooter();
+  renderBreadcrumb([{label:'Materi K3', href:'../pengantar.html'},{label:'Ergonomi dan Posisi Kerja', href:null}]);
+</script>
+</body>
+</html>
