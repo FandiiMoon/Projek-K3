@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Identitas Peserta — K3 QUEST</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{'primary':'#002530','primary-container':'#193B46','secondary':'#396662','secondary-fixed':'#BCECE7','surface':'#F4FAFE','surface-container-lowest':'#ffffff','surface-container-low':'#EEF4F8','surface-container':'#E9EFF3','on-surface':'#161C1F','on-surface-variant':'#41484B','outline-variant':'#C1C7CB','correct':'#23866D','correct-bg':'#D8F0E8'},fontFamily:{sans:['Inter','system-ui','sans-serif'],display:['Plus Jakarta Sans','sans-serif']},borderRadius:{card:'14px',btn:'10px'},boxShadow:{card:'0 1px 4px rgba(23,43,52,0.06),0 4px 16px rgba(23,43,52,0.04)',header:'0 1px 8px rgba(23,43,52,0.05)'}}}}
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body class="bg-surface text-on-surface font-sans antialiased">
+<header id="app-header" class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-header border-b border-outline-variant/30"></header>
+<div class="h-16"></div>
+<div id="app-breadcrumb"></div>
+
+<main class="max-w-lg mx-auto px-4 sm:px-6 py-14">
+  <div class="text-center mb-8 fade-up">
+    <div class="w-16 h-16 rounded-2xl bg-primary-container flex items-center justify-center mx-auto mb-4">
+      <span class="material-symbols-outlined text-white" style="font-size:32px;">person</span>
+    </div>
+    <h1 class="font-display text-2xl font-bold text-primary">Identitas Peserta</h1>
+    <p class="text-on-surface-variant text-sm mt-1">Masukkan data diri Anda sebelum memulai pembelajaran.</p>
+  </div>
+
+  <div class="card p-6 sm:p-8 fade-up delay-1">
+    <form id="identitasForm" class="flex flex-col gap-5" novalidate>
+      <div>
+        <label class="form-label" for="nama">Nama Lengkap <span class="text-wrong">*</span></label>
+        <input type="text" id="nama" class="form-input" placeholder="Contoh: Budi Santoso" autocomplete="name" required/>
+        <p class="form-error hidden" id="namaError">Nama wajib diisi.</p>
+      </div>
+      <div>
+        <label class="form-label" for="kelas">Kelas <span class="text-wrong">*</span></label>
+        <input type="text" id="kelas" class="form-input" placeholder="Contoh: XII RPL 1" required/>
+        <p class="form-error hidden" id="kelasError">Kelas wajib diisi.</p>
+      </div>
+      <div>
+        <label class="form-label" for="nomorAbsen">Nomor Absen <span class="text-on-surface-variant font-normal">(opsional)</span></label>
+        <input type="text" id="nomorAbsen" class="form-input" placeholder="Contoh: 15"/>
+      </div>
+      <button type="submit" class="btn btn-primary btn-full btn-lg mt-2">
+        <span class="material-symbols-outlined icon-md">arrow_forward</span>
+        Mulai Belajar
+      </button>
+    </form>
+  </div>
+</main>
+
+<footer id="app-footer" class="bg-surface-container-low border-t border-outline-variant/30"></footer>
+<script src="assets/js/k3.js"></script>
+<script>
+  renderHeader('');
+  renderFooter();
+  renderBreadcrumb([{ label: 'Identitas Peserta', href: null }]);
+
+  // If already identified, redirect to pengantar
+  if (K3.sudahIdentitas()) window.location.href = 'pengantar.html';
+
+  document.getElementById('identitasForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const nama  = document.getElementById('nama').value.trim();
+    const kelas = document.getElementById('kelas').value.trim();
+    let valid = true;
+
+    if (!nama) { document.getElementById('namaError').classList.remove('hidden'); document.getElementById('nama').classList.add('error'); valid = false; }
+    else        { document.getElementById('namaError').classList.add('hidden'); document.getElementById('nama').classList.remove('error'); }
+
+    if (!kelas) { document.getElementById('kelasError').classList.remove('hidden'); document.getElementById('kelas').classList.add('error'); valid = false; }
+    else         { document.getElementById('kelasError').classList.add('hidden'); document.getElementById('kelas').classList.remove('error'); }
+
+    if (valid) {
+      K3.setPeserta(nama, kelas);
+      window.location.href = 'pengantar.html';
+    }
+  });
+</script>
+</body>
+</html>
